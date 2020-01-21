@@ -1,5 +1,6 @@
-const pwdRequired = require('./pwd')
-
+const { pwdLogic } = require('./pwd')
+const { lsLogic } = require('./ls')
+const fs = require('fs')
 process.stdout.write('prompt > ');
 
 process.stdout.on('data', (data) => {
@@ -8,4 +9,7 @@ process.stdout.on('data', (data) => {
     process.stdout.write('\nprompt > ');
     });
 
-pwdRequired()
+
+lslogic
+// console.log(pwdRequired)
+
